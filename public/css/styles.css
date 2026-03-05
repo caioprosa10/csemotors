@@ -1,0 +1,38 @@
+* { box-sizing: border-box; }
+body { font-family: sans-serif; margin: 0; padding: 0; }
+
+/* Desktop Background (Fundo Xadrez) */
+@media screen and (min-width: 800px) {
+    body {
+        background-color: #000;
+        background-image: linear-gradient(45deg, #ccc 25%, transparent 25%), 
+                          linear-gradient(-45deg, #ccc 25%, transparent 25%), 
+                          linear-gradient(45deg, transparent 75%, #ccc 75%), 
+                          linear-gradient(-45deg, transparent 75%, #ccc 75%);
+        background-size: 80px 80px;
+    }
+}
+
+#wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: #fff;
+    border: 5px solid #00bfff;
+    padding: 15px;
+}
+
+.delorean-img { width: 100%; height: auto; display: block; }
+.hero { position: relative; margin-bottom: 20px; }
+.hero-info { background: rgba(255,255,255,0.8); padding: 10px; position: absolute; top: 10px; left: 10px; color: #00bfff; border: 1px solid #ccc; }
+.own-today { background: #00bfff; border: none; padding: 10px; font-weight: bold; cursor: pointer; }
+
+/* Seções de baixo */
+.flex-content { display: flex; flex-direction: column; }
+@media screen and (min-width: 800px) {
+    .flex-content { flex-direction: row-reverse; justify-content: space-between; }
+    .upgrades, .reviews { width: 48%; }
+}
+
+.upgrade-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.u-item { background: #00bfff; border: 1px solid #333; text-align: center; padding: 10px; }
+.u-item img { max-width: 60px; display: block; margin: 0 auto; }
