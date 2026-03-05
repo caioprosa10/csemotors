@@ -1,0 +1,14 @@
+{
+  "name": "cse-motors",
+  "version": "1.0.0",
+  "description": "Projeto CSE Motors para BYU-Idaho",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.22.1"
+  }
+}
